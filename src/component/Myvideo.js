@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player';
-import videoBg from '../assest/video/video.mp4';
+import videoBg from '../assest/video/myVideo.mp4';
 
 function Myvideo() {
     return (
@@ -8,7 +8,7 @@ function Myvideo() {
             <ReactPlayer
                 url={videoBg}
                 playing={true}
-                muted={true}
+                muted={false}
                 controls={false}
                 loop={true}
                 className="react_player"

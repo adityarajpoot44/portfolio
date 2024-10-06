@@ -1,9 +1,10 @@
 import React from "react";
-import m1 from "../../img/m1.avif"
-import m2 from "../../img/m2.png"
-import m3 from "../../img/m3.jpg"
-import m4 from "../../img/m4.png"
-import resume from "../../assest/Resume/Aditya_FrontEnd.pdf"
+import m1 from "../../img/m1.avif";
+import m2 from "../../img/m2.png";
+import m3 from "../../img/m3.jpg";
+import m4 from "../../img/m4.png";
+import m5 from "../../img/m5.png";
+import resume from "../../assest/Resume/Aditya_FrontEnd.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub, faLinkedinIn, faTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faGears, faServer, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +19,7 @@ function About() {
                 </div>
                 <div className="flex g-4 flex-col md:flex-col lg:flex-row justify-between mb-[200px]">
                     <div className=" w-[100%] lg:w-[100rem] md:w-[100%]  pt-3">
-                        <img className=" rounded-[20px] w-full h-full" src={m2} />
+                        <img className=" rounded-[20px] w-full h-full removeb" src={m5} />
                     </div>
                     <div className=" p-8  ">
                         <h2 className=" text-[25px] mb-4 font-bold text-[#009e66]">Who am i?</h2>

@@ -10,7 +10,6 @@ import Home from './component/pages/Home.js';
 import { Outlet } from 'react-router-dom';
 
 
-
 function App() {
   return (
     <>
