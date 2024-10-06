@@ -1,7 +1,5 @@
 import React from 'react'
-import logo from '../img/i.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import { NavLink } from 'react-router-dom';
 function Header() {
     var css_prop = "hidden";

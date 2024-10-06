@@ -1,6 +1,6 @@
 
 import React from "react";
-// import project1 from '../../img/p1.png',
+
 import blog from '../../img/project/Blog.png'
 import edu from '../../img/project/Edu.png'
 import gym from '../../img/project/Gym.png'
