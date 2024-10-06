@@ -8,6 +8,7 @@ import resume from "../../assest/Resume/Aditya_FrontEnd.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub, faLinkedinIn, faTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faGears, faServer, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
+import ServiceCom from "../page_component/Service_page.js";
 
 
 function About() {
@@ -54,73 +55,36 @@ function About() {
                 <div className=" mt-[50px]">
                     <h1 className="text-4xl font-bold mb-[100px]">My Services</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 ">
-                        <div className="p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faHtml5} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>Design Trends</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p>Design trends growing emphasis on voice user interfaces, and dark mode</p>
-                            </div>
-                        </div>
-                        <div className=" p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faUpDownLeftRight} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>Fully Responsive</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p>Creating websites that adapt to different screen sizes and devices</p>
-                            </div>
-                        </div>
-                        <div className=" p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faGears} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>SEO</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p>Optimizing websites for better search engine rankings.</p>
-                            </div>
-                        </div>
-                        <div className=" p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faCode} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>Web Development</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p>Building the foundation of websites using these core web technologies.</p>
-                            </div>
-                        </div>
-                        <div className=" p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faDatabase} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>Database Management</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p>Working with databases like MySQL, PostgreSQL, or MongoDB</p>
-                            </div>
-                        </div>
-                        <div className=" p-7 about_card">
-                            <div className="">
-                                <FontAwesomeIcon icon={faServer} className="text-5xl text-[#009e66] mb-4" />
-                            </div>
-                            <div className="about_services">
-                                <p>Server-Side Development</p>
-                            </div>
-                            <div className="text-[15px] text-[#777] pb-2">
-                                <p> Building the logic and functionality behind websites</p>
-                            </div>
-                        </div>
-
+                        <ServiceCom 
+                        name="Design Trends"
+                        para="Design trends growing emphasis on voice user interfaces, and dark mode."
+                        icon={faHtml5}
+                        />
+                         <ServiceCom 
+                        name="Fully Responsive"
+                        para="Creating websites that adapt to different screen sizes and devices."
+                        icon={faUpDownLeftRight}
+                        />
+                         <ServiceCom 
+                        name="SEO"
+                        para="Optimizing websites for better search engine rankings."
+                        icon={faGears}
+                        />
+                         <ServiceCom 
+                        name="Web Development"
+                        para="Building the foundation of websites using these core web technologies."
+                        icon={faCode}
+                        />
+                         <ServiceCom 
+                        name="Database Management"
+                        para="Working with databases like MySQL, PostgreSQL, or MongoDB."
+                        icon={faDatabase}
+                        />
+                         <ServiceCom 
+                        name="Server-Side Development"
+                        para=" Building the logic and functionality behind websites."
+                        icon={faServer}
+                        />
                     </div>
                 </div>
             </div>

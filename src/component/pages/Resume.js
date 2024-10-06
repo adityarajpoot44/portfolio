@@ -1,68 +1,51 @@
 import React from "react";
+import ProgressBar from "../page_component/Progress_bar.js";
+import ResumeSec from "../page_component/Resume_sec.js";
 
 
 function Resume() {
     return (
         <div className="absolute z-20 bg-black w-screen h-screen">
-            <div className="w-[80%] m-auto mt-[50px] pt-[100px]">
+            <div className="w-[90%] m-auto mt-[50px] py-[100px] ">
                 <div className="text-center">
                     <h1 className="text-[46px] mb-[37px] font-bold">Resume</h1>
                 </div>
-                <div className="flex gap-14">
+                <div className=" flex flex-col gap-0 md:gap-[50px] md:flex-row">
+                    <div className="w-full">
+                        <h2 className="text-3xl pb-4">Education</h2>
+                        <div className="pb-10">
+                            <ResumeSec heading="Bachelor Degree" year={"2020 - 2024"} college={"Lovely Professional University"} para={"Computer Science and Engineering"}/>
+                            <ResumeSec heading="Intermediate" year={"2019 - 2020"} college={"Hem Vidya Niketan School"} para={"Physic, Chemistry, Mathametics"}/>
+                            <ResumeSec heading=" Matriculation" year={"2017 - 2018"} college={"Krishna International School"} para={"-"}/>
+                        </div>
+                    </div>
+                    <div className="w-full">
+                    <h2 className="text-3xl pb-4">Expeience</h2>
+                        <div className="pb-10">
+                            <ResumeSec heading="Frontend Developer" year={"Sep'24 - Present"} college={"Maisha Infotech Pvt Ltd"} para={"Crafted responsive websites using HTML5, CSS3, JavaScript, and React frameworks"}/>
+                           </div>
+                    </div>
+                </div>
+
+                <h1 className="text-4xl font-bold mb-[50px]">My Skills</h1>
+                <div className="flex flex-col gap-3 md:flex-row md:gap-14">
                     <div className="w-full">
                         <div className="space-y-3">
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(25%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">25%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(50%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">50%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(75%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">75%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(100%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">100%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
+                            <ProgressBar name="HTML/CSS" range="90%" />
+                            <ProgressBar name="Web Design" range="90%" />
+                            <ProgressBar name="MongoDB" range="50%" />
+                            <ProgressBar name="Node.js" range="70%" />
+                            <ProgressBar name="Git/Github" range="75%" />
                         </div>
                     </div>
                     <div className="w-full">
                         <div className="space-y-3">
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(25%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">25%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(50%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">50%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(75%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">75%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="inline-block mb-2 ms-[calc(100%-1.25rem)] py-0.5 px-1.5 bg-blue-50 border border-blue-200 text-xs font-medium text-blue-600 rounded-lg">100%</div>
-                                <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                    <div className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style={{ width: "100%" }}></div>
-                                </div>
-                            </div>
+                            <ProgressBar name="React" range="80%" />
+                            <ProgressBar name="JavaScript" range="85%" />
+                            <ProgressBar name="Express.js" range="50%" />
+                            <ProgressBar name="C++" range="80%" />
+                            <ProgressBar name="Tailwind Css" range="95%" />
+
                         </div>
                     </div>
                 </div>

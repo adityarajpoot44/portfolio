@@ -57,7 +57,7 @@ function Contact() {
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
                                         <h4 className="text-[15px] font-medium">Call Me</h4>
-                                        <span className="text-[#9f9f9f]">+91 8279731524</span>
+                                        <span className="text-[#9f9f9f]"><a href="tel:8279731524">+91 8279731524</a></span>
                                     </div>
                                 </li>
                                 <li className="flex">
@@ -68,7 +68,7 @@ function Contact() {
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
                                         <h4 className="text-[15px] font-medium">Email Me</h4>
-                                        <span className="text-[#9f9f9f]">adityakumar8279@gmail.comt</span>
+                                        <span className="text-[#9f9f9f]"><a href="mailto:adityakumar8279@gmail.com">adityakumar8279@gmail.comt</a></span>
                                     </div>
                                 </li>
                             </ul>
