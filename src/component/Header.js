@@ -1,41 +1,43 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 import { NavLink } from 'react-router-dom';
 function Header() {
-    var css_prop = "hidden";
     return (
         <div className='absolute w-full flex justify-between p-10 z-50' >
             <div className=''>
-                <img className='header_logo w-24' src={null} />
+                <img className='header_logo w-24' src={null} alt='' />
             </div>
             <div>
                 <ul className='header_li flex gap-10 cursor-pointer'>
-                    {/* <li className={`sm:${css_prop} hover:text-orange-500`}><FontAwesomeIcon icon={faBars} size="lg" /></li> */}
                     <li>
-                        <NavLink to='/' className={({ isActive }) => `hover:text-orange-700 header_hide ${isActive ? "text-orange-700" : "text-white"}`}>
+                        <NavLink to='/' className={({ isActive }) => `hover:text-[#099e66] header_hide ${isActive ? "text-[#099e66]" : "text-white"}`}>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about' className={({ isActive }) => `hover:text-orange-700 header_hide ${isActive ? "text-orange-700" : "text-white"}`}>
+                        <NavLink to='/about' className={({ isActive }) => `hover:text-[#099e66] header_hide ${isActive ? "text-[#099e66]" : "text-white"}`}>
                             About
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/resume' className={({ isActive }) => `hover:text-orange-700 header_hide ${isActive ? "text-orange-700" : "text-white"}`}>
+                        <NavLink to='/resume' className={({ isActive }) => `hover:text-[#099e66] header_hide ${isActive ? "text-[#099e66]" : "text-white"}`}>
                             Resume
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/project' className={({ isActive }) => `hover:text-orange-700 header_hide ${isActive ? "text-orange-700" : "text-white"}`}>
+                        <NavLink to='/project' className={({ isActive }) => `hover:text-[#099e66] header_hide ${isActive ? "text-[#099e66]" : "text-white"}`}>
                             Project
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact' className={({ isActive }) => `hover:text-orange-700 header_hide ${isActive ? "text-orange-700" : "text-white"}`}>
+                        <NavLink to='/contact' className={({ isActive }) => `hover:text-[#099e66] header_hide ${isActive ? "text-[#099e66]" : "text-white"}`}>
                             Contact
                         </NavLink>
                     </li>
+                    <li className={`sm:hidden text-[28px] hover:text-[#099e66]`}><FontAwesomeIcon icon={faBars} /></li>
 
                 </ul>
             </div>

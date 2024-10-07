@@ -1,14 +1,12 @@
 import React from "react";
-import m1 from "../../img/m1.avif";
-import m2 from "../../img/m2.png";
-import m3 from "../../img/m3.jpg";
-import m4 from "../../img/m4.png";
+
 import m5 from "../../img/m5.png";
 import resume from "../../assest/Resume/Aditya_FrontEnd.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub, faLinkedinIn, faTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faGears, faServer, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
 import ServiceCom from "../page_component/Service_page.js";
+import { Link } from "react-router-dom";
 
 
 function About() {
@@ -20,7 +18,7 @@ function About() {
                 </div>
                 <div className="flex g-4 flex-col md:flex-col lg:flex-row justify-between mb-[200px]">
                     <div className=" w-[100%] lg:w-[100rem] md:w-[100%]  pt-3">
-                        <img className=" rounded-[20px] w-full h-full removeb" src={m5} />
+                        <img className=" rounded-[20px] w-full h-full removeb" src={m5} alt="" />
                     </div>
                     <div className=" p-8  ">
                         <h2 className=" text-[25px] mb-4 font-bold text-[#009e66]">Who am i?</h2>
@@ -33,7 +31,7 @@ function About() {
                                     <p className="py-2 w-max">Age: <span>22</span></p>
                                 </div>
                                 <div className="w-[100%]  w-max">
-                                    <p className="py-2 w-max">Email: <span><a href="mailto:adityakumar8279@gmail.com" className="text-[#009e66]">adityakumar8279@gmail.com</a></span></p>
+                                    <p className="py-2 w-max">Email: <span><Link to="mailto:adityakumar8279@gmail.com"  className="text-[#009e66]">adityakumar8279@gmail.com</Link></span></p>
                                     <p className="py-2 w-max">From: <span>Noida,India</span></p>
                                 </div>
                             </div>
@@ -44,10 +42,10 @@ function About() {
                             </div>
 
                             <div className="social_btn pt-7 md:p-3 ">
-                                <a href="https://github.com/adityarajpoot44" target="_blank"><FontAwesomeIcon icon={faGithub} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                                <a href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                                <a href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank"><FontAwesomeIcon icon={faInstagram} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                                <a href="https://twitter.com/adityar_44" target="_blank"><FontAwesomeIcon icon={faTwitter} className="px-2 text-xl hover_social hover:text-[#009e66]" /></a>
+                                <a href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
+                                <a href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
+                                <a href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
+                                <a href="https://twitter.com/adityar_44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="px-2 text-xl hover_social hover:text-[#009e66]" /></a>
                             </div>
                         </div>
                     </div>
