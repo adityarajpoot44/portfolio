@@ -8,7 +8,7 @@ function Myvideo() {
             <ReactPlayer
                 url={videoBg}
                 playing={true}
-                muted={false}
+                muted={true}
                 controls={false}
                 loop={true}
                 className="react_player"
