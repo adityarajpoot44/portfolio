@@ -5,7 +5,7 @@ import videoBg from '../assest/video/myVideo.mp4';
 function Myvideo() {
     return (
         <div className='video_main brightness-[40%] z-0'>
-            <ReactPlayer
+            {/* <ReactPlayer
                 url={videoBg}
                 playing={true}
                 muted={false}
@@ -14,7 +14,7 @@ function Myvideo() {
                 className="react_player"
                 width="100%"
                 height="100vh"
-            />
+            /> */}
             </div>
     );
 }
