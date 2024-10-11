@@ -6,7 +6,7 @@ function Header() {
     return (
         <>
             <header className="fixed flex flex-wrap md:justify-start md:flex-nowrap  z-50 w-full">
-                <nav className="mt-1 w-full bg-[white] rounded-[2rem] mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900/90 dark:border-[#099e66] ">
+                <nav className="mt-1 w-full bg-neutral-900/90 rounded-[2rem] mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900/90 dark:border-[#099e66] ">
                     <div className="px-4 md:px-0 flex justify-end items-center">
                         <div className="md:hidden">
                             <button type="button" className="hs-collapse-toggle flex justify-center items-center size-9 border border-[#099e66] text-white rounded-full hover:bg-[#099e66]/70 focus:outline-none focus:bg-[#099e66]/70 dark:border-[#099e66] dark:text-[#099e66] dark:hover:bg-[#099e66]/70 dark:focus:bg-[#099e66]/30" id="hs-navbar-header-floating-collapse" aria-expanded="false" aria-controls="hs-navbar-header-floating" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-header-floating">

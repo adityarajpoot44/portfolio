@@ -8,12 +8,13 @@ function Myvideo() {
             <ReactPlayer
                 url={videoBg}
                 playing={true}
-                muted={true}
+                muted={false}
                 controls={false}
                 loop={true}
                 className="react_player"
                 width="100%"
                 height="100vh"
+                volume={0.3}
             />
             </div>
     );
