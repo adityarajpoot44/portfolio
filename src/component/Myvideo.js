@@ -14,7 +14,7 @@ function Myvideo() {
                 className="react_player"
                 width="100%"
                 height="100vh"
-                volume={0.3}
+                volume={0.1}
             />
             </div>
     );
