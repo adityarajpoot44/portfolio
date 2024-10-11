@@ -12,11 +12,11 @@ import { Link } from "react-router-dom";
 function About() {
     return (
         <div className="absolute z-20 bg-black w-screen">
-            <div className="w-[80%] m-auto my-[50px] pt-[100px] ">
-                <div className="text-center mb-[70px]">
+            <div className="w-[80%] m-auto my-[10px] pt-[100px] ">
+                <div className="text-center mb-[40px]">
                     <h1 className="text-[46px] mb-[37px] font-bold">About Me</h1>
                 </div>
-                <div className="flex g-4 flex-col md:flex-col lg:flex-row justify-between mb-[200px]">
+                <div className="flex g-4 flex-col md:flex-col lg:flex-row justify-between mb-[90px]">
                     <div className=" w-[100%] lg:w-[100rem] md:w-[100%]  pt-3">
                         <img className=" rounded-[20px] w-full h-full removeb" src={m5} alt="" />
                     </div>
@@ -50,7 +50,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className=" mt-[50px]">
+                <div className="">
                     <h1 className="text-4xl font-bold mb-[100px]">My Services</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 ">
                         <ServiceCom 
