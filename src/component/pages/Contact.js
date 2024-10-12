@@ -5,7 +5,7 @@ import { faUserSecret, faMapLocationDot, faMobileScreen, faPaperPlane } from "@f
 function Contact() {
     return (
         <div className="absolute z-30 w-screen h-screen">
-            <div className="w-[90%] m-auto mt-[50px] pt-[100px]">
+            <div className="w-[100%] m-auto mt-[50px] pt-[100px]">
                 <div className="text-center">
                     <h1 className="text-[46px] mb-[37px] font-bold">Get in Touch</h1>
                 </div>
@@ -68,7 +68,7 @@ function Contact() {
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
                                         <h4 className="text-[15px] font-medium">Email Me</h4>
-                                        <span className="text-[#9f9f9f]" style={{fontSize:"14px"}}><a href="mailto:adityakumar8279@gmail.com">adityakumar8279@gmail.com</a></span>
+                                        <span className="text-[#9f9f9f]" ><a href="mailto:adityakumar8279@gmail.com">adityakumar8279@gmail.com</a></span>
                                     </div>
                                 </li>
                             </ul>
