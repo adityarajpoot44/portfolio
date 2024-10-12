@@ -186,11 +186,10 @@ html {
 
 }
 .side_nav{
-  /* display: none; */
-  background-color: #7777775e;
+  background-color: #777;
   height: screen;
   transition: width 2s linear 1s;
-  &.hidden {
+   &.hidden {
     transform: translateX(100%);
   }
 }

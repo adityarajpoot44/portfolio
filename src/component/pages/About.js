@@ -20,7 +20,7 @@ function About() {
                     <div className=" w-[100%] lg:w-[100rem] md:w-[100%]  pt-3">
                         <img className=" rounded-[20px] w-full h-full removeb" src={m5} alt="" />
                     </div>
-                    <div className=" p-8  ">
+                    <div className="">
                         <h2 className=" text-[25px] mb-4 font-bold text-[#009e66]">Who am i?</h2>
                         <p className="text-[27px] font-bold ">I'm Aditya Rajpoot,  a Web Developer & Software Engineer </p>
                         <p className="text-[15px] text-[#9f9f9f] py-2"> I am a freelancer based in the India. Results-oriented Web Developer with a passion for crafting dynamic and user-friendly web applications. Proven expertise in front-end development using frameworks like ReactJS, complemented by a strong foundation in back-end technologies such as Node.js and MySQL.</p>
