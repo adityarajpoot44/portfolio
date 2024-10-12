@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 function About() {
     return (
-        <div className="absolute z-20 bg-black w-screen">
-            <div className="w-[80%] m-auto my-[10px] pt-[100px] ">
+        <div className="absolute bg-black z-20 w-screen">
+            <div className="w-[90%] m-auto my-[10px] pt-[100px] px-2 ">
                 <div className="text-center mb-[40px]">
                     <h1 className="text-[46px] mb-[37px] font-bold">About Me</h1>
                 </div>

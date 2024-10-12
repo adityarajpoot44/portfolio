@@ -41,7 +41,7 @@ function Header() {
         <>
             <header className="fixed z-50 w-full pt-3 flex justify-between">
                 <div className="">
-                    <img alt="" src={logo} width="100px" className="absolute top-0" />
+                    <NavLink to="/" ><img alt="" src={logo} width="100px" className="absolute top-0" /></NavLink>
                 </div>
                 <div className="block md:hidden px-7 text-xl py-3 ">
                         <span><FontAwesomeIcon icon={ham} onClick={toggleSidebar} /></span>

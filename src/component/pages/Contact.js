@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import{ faUserSecret, faMapLocationDot,faMobileScreen,faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faUserSecret, faMapLocationDot, faMobileScreen, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     return (
-        <div className="absolute z-30 w-screen h-screen">
-            <div className="w-[80%] m-auto mt-[50px] pt-[100px]">
+        <div className="absolute z-30 bg-black w-screen h-screen">
+            <div className="w-[90%] m-auto mt-[50px] pt-[100px]">
                 <div className="text-center">
                     <h1 className="text-[46px] mb-[37px] font-bold">Get in Touch</h1>
                 </div>
@@ -30,18 +30,18 @@ function Contact() {
                                 <li className="flex">
                                     <div className="Icon_ad">
                                         <span className="size_icon">
-                                        <FontAwesomeIcon icon={faUserSecret} color="#009e66" />
+                                            <FontAwesomeIcon icon={faUserSecret} color="#009e66" />
                                         </span>
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
                                         <h4 className="text-[15px] font-medium ">Name</h4>
                                         <span className="text-[#9f9f9f]">Aditya Rajpoot</span>
                                     </div>
-                                </li> 
+                                </li>
                                 <li className="flex">
                                     <div className="Icon_ad">
                                         <span className="size_icon">
-                                        <FontAwesomeIcon icon={faMapLocationDot} color="#009e66" />
+                                            <FontAwesomeIcon icon={faMapLocationDot} color="#009e66" />
                                         </span>
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
@@ -52,7 +52,7 @@ function Contact() {
                                 <li className="flex">
                                     <div className="Icon_ad">
                                         <span className="size_icon">
-                                        <FontAwesomeIcon icon={faMobileScreen} color="#009e66" />
+                                            <FontAwesomeIcon icon={faMobileScreen} color="#009e66" />
                                         </span>
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
@@ -63,12 +63,12 @@ function Contact() {
                                 <li className="flex">
                                     <div className="Icon_ad">
                                         <span className="size_icon">
-                                        <FontAwesomeIcon icon={faPaperPlane} color="#009e66"/>
+                                            <FontAwesomeIcon icon={faPaperPlane} color="#009e66" />
                                         </span>
                                     </div>
                                     <div className="border_side relative bottom-[10px]">
                                         <h4 className="text-[15px] font-medium">Email Me</h4>
-                                        <span className="text-[#9f9f9f]"><a href="mailto:adityakumar8279@gmail.com">adityakumar8279@gmail.comt</a></span>
+                                        <span className="text-[#9f9f9f]" style={{fontSize:"14px"}}><a href="mailto:adityakumar8279@gmail.com">adityakumar8279@gmail.com</a></span>
                                     </div>
                                 </li>
                             </ul>
