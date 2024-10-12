@@ -5,7 +5,7 @@ import { faUserSecret, faMapLocationDot, faMobileScreen, faPaperPlane } from "@f
 function Contact() {
     return (
         <div className="absolute z-30 w-screen h-screen">
-            <div className="w-[100%] m-auto mt-[50px] pt-[100px]">
+            <div className="w-[100%] md:w-[80%] m-auto mt-[50px] pt-[100px]">
                 <div className="text-center">
                     <h1 className="text-[46px] mb-[37px] font-bold">Get in Touch</h1>
                 </div>
