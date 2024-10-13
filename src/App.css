@@ -204,4 +204,28 @@ html {
   color: #009e66;
   background-color: #009e66/30;
 }
+.glass{
+  background: rgba( 134, 134, 134, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.button{
+  padding: 5px 20px;
+  background-color: #05ac7247;
+  border-radius: 20px;
+  width: 100px;
+  margin-top: 10px;
+  border: #009e6700 solid 1px;
+  color: #009e66;
+  transition: background-color .5s;
 
+
+  &:hover{
+    border: #009e66 solid 1px;
+    background-color: transparent;
+    color: #009e66;
+  }
+}
