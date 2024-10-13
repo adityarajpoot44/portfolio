@@ -15,7 +15,7 @@ function ProjectCard({
     logo1,logo2,logo3,logo4,logo5
 }) {
     return (
-        <div className={`flex md:${rev} flex-col border mt-10 py-5 md:p-5 glass`}>
+        <div className={`flex ${rev} flex-col border mt-10 py-5 md:p-5 glass`}>
             <div className="w-full md:w-1/2 p-0 md:p-2 rounded rounded-xl" >
                 <img src={img} alt="" className="w-[100%] h-[100%]"/>
             </div>

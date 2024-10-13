@@ -33,10 +33,10 @@ function Project() {
                 <div className="text-center mb-[70px]">
                     <h1 className="text-[46px] mb-[37px] font-bold">Project</h1>
 
-                    <ProjectCard para={text1} logo1={react} logo2={redux} logo3={node} logo4={tailwind} logo5={firebase} img={blog} heading={"Blog Website"} website={"https://reactblogapp44.netlify.app"} github={"https://github.com/adityarajpoot44/blogSite_react"} rev={"flex-row-reverse"}/>
-                    <ProjectCard  img={todo}  heading={"Todo App"} para={text2} logo1={html} logo2={javascript} logo3={react} logo4={redux} logo5={tailwind} website={"https://localreactstoragetodo.netlify.app"} github={"https://github.com/adityarajpoot44/todoReact"} rev={"flex-row"}/>
-                    <ProjectCard  img={imgi} heading={"Image Slider"} para={text3} logo1={html} logo2={css} logo3={javascript} logo4={react} logo5={tailwind} website={"https://imageslider44.netlify.app"} github={"https://github.com/adityarajpoot44/ImageSlider"} rev={"flex-row-reverse"}/>
-                    <ProjectCard  img={edu} heading={"Education website"} para={text3} logo1={html} logo2={css} logo3={javascript} logo4={bootstrap} logo5={tailwind} website={"https://eduford44.netlify.app"} github={"https://github.com/adityarajpoot44/Eduford_website"} rev={"flex-row"}/>
+                    <ProjectCard para={text1} logo1={react} logo2={redux} logo3={node} logo4={tailwind} logo5={firebase} img={blog} heading={"Blog Website"} website={"https://reactblogapp44.netlify.app"} github={"https://github.com/adityarajpoot44/blogSite_react"} rev={"md:flex-row"}/>
+                    <ProjectCard  img={todo}  heading={"Todo App"} para={text2} logo1={html} logo2={javascript} logo3={react} logo4={redux} logo5={tailwind} website={"https://localreactstoragetodo.netlify.app"} github={"https://github.com/adityarajpoot44/todoReact"} rev={"md:flex-row-reverse"}/>
+                    <ProjectCard  img={imgi} heading={"Image Slider"} para={text3} logo1={html} logo2={css} logo3={javascript} logo4={react} logo5={tailwind} website={"https://imageslider44.netlify.app"} github={"https://github.com/adityarajpoot44/ImageSlider"} rev={"md:flex-row"}/>
+                    <ProjectCard  img={edu} heading={"Education website"} para={text3} logo1={html} logo2={css} logo3={javascript} logo4={bootstrap} logo5={tailwind} website={"https://eduford44.netlify.app"} github={"https://github.com/adityarajpoot44/Eduford_website"} rev={"md:flex-row-reverse"}/>
                 </div>
 
             </div>
