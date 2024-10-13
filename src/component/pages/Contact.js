@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserSecret, faMapLocationDot, faMobileScreen, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
+    const [email, setemail] = useState()
+
+    const Handleform = async (e) => {
+        // e.preventDefault();
+            const name=document.querySelector('#name').value
+            const subject= document.querySelector('#subject').value
+            const message= document.querySelector('#message').value
+
+
+       const res = fetch('/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email,name,subject,message
+            })
+        })
+        if(res.ok){
+            console.log("sent")
+        }else{
+            console.log('error')
+        }
+    }
+
+
+
+
     return (
         <div className="absolute z-30 w-screen h-screen">
             <div className="w-[100%] md:w-[80%] m-auto mt-[50px] pt-[100px]">
@@ -11,15 +39,15 @@ function Contact() {
                 </div>
                 <div className="flex md:flex-row flex-col">
                     <div className=" md:w-[50%] w-full">
-                        <form className="flex flex-col gap-6 p-5">
+                        <form onSubmit={Handleform} className="flex flex-col gap-6 p-5">
                             <lable className="text-[25px] mb-2">Message Me</lable>
                             <div className="flex flex-col lg:flex-row gap-4">
-                                <input type="text" placeholder="Name" className="w-full form_field" required />
-                                <input type="text" placeholder="Email" className="w-full form_field" required />
+                                <input type="text" id="name" placeholder="Name" className="w-full form_field" required />
+                                <input type="text" id="email" onChange={(e) => setemail(e.target.value)} placeholder="Email" className="w-full form_field" required />
                             </div>
-                            <input type="text" placeholder="Subject" className="w-full form_field" required />
-                            <textarea rows={4} type="text" placeholder="Message" className="w-full form_field1" required />
-                            <button className="bg-[#009e66] py-[10px] px-[26px] rounded">Submit</button>
+                            <input type="text" id="subject" placeholder="Subject" className="w-full form_field" required />
+                            <textarea rows={4} type="text" id="message" placeholder="Message" className="w-full form_field1" required />
+                            <button className="bg-[#009e66] py-[10px] px-[26px] rounded" type="submit">Submit</button>
                         </form>
                     </div>
                     <div className=" md:w-[50%] w-full p-5">
