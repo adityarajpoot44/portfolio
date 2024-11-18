@@ -1,9 +1,10 @@
 import React from "react";
 
 import m5 from "../../img/m5.png";
+// import leetcode from "../../img/LeetCode.png";
 import resume from "../../assest/Resume/ADITYA_KUMAR.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faGithub, faLinkedinIn, faTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faGithub, faLinkedinIn, faXTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faGears, faServer, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
 import ServiceCom from "../page_component/Service_page.js";
 import { Link } from "react-router-dom";
@@ -41,11 +42,11 @@ function About() {
                                 <a href={resume} download><button className="btn p-3 px-7 ">Downlode CV</button></a>
                             </div>
 
-                            <div className="social_btn pt-7 md:p-3 ">
+                            <div className="social_btn pt-7 md:p-3">
                                 <a href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
                                 <a href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
                                 <a href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="px-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                                <a href="https://twitter.com/adityar_44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="px-2 text-xl hover_social hover:text-[#009e66]" /></a>
+                                <a href="https://twitter.com/adityar_44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faXTwitter} className="px-2 text-xl hover_social hover:text-[#009e66]" /></a>
                             </div>
                         </div>
                     </div>
