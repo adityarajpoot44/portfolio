@@ -1,7 +1,7 @@
 import React from "react";
 
 import m5 from "../../img/m5.png";
-import resume from "../../assest/Resume/Aditya_FrontEnd.pdf";
+import resume from "../../assest/Resume/ADITYA_KUMAR.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub, faLinkedinIn, faTwitter, faHtml5,} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faGears, faServer, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
