@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 import { NavLink } from "react-router-dom";
 import logo from "../img/LOGO.png"
 import '../App.css'
@@ -22,35 +24,42 @@ function Nav() {
 
 function Header() {
     const [ham, setHam] = useState(faBars);
-  const [content, setContent] = useState('hidden');
+    const [content, setContent] = useState('hidden');
+    const barbtn = useRef()
 
-  useEffect(() => {
-    if (ham === faXmark) {
-      setContent('block');
-    } else {
-      setContent('hidden');
-    }
-  }, [ham]);
+    useGSAP(()=>{
+        gsap.to(barbtn,{
+            x:20
+        })
+    })
 
-  const toggleSidebar = () => {
-    setHam(ham === faBars ? faXmark : faBars);
-  };
+    useEffect(() => {
+        if (ham === faXmark) {
+            setContent('block');
+        } else {
+            setContent('hidden');
+        }
+    }, [ham]);
+
+    const toggleSidebar = () => {
+        setHam(ham === faBars ? faXmark : faBars);
+    };
 
 
     return (
         <>
             <header className="fixed z-50 w-full pt-3 flex justify-between">
                 <div className="">
-                    <NavLink to="/" ><img alt="" src={logo} width="100px" className="absolute top-0" /></NavLink>
+                    <NavLink to="/" ><img alt="" src={logo} width="100px" className="absolute top-0 left-[-20px]" /></NavLink>
                 </div>
-                <div className="block md:hidden px-7 text-xl py-3 ">
-                        <span><FontAwesomeIcon icon={ham} onClick={toggleSidebar} /></span>
-                        <div className={`absolute w-[120px] ${content} right-1 py-10 side_nav`}>
-                            <div className="flex-col flex gap-2">
-                                <Nav/>
-                            </div>
-                            
+                <div className="block md:hidden text-xl border">
+                    <span ref={barbtn} className="border text-[#009e66] absolute right-10 border-[#009e66] py-2 px-3 rounded-full bg-gray-50/20 "><FontAwesomeIcon icon={ham} onClick={toggleSidebar} /></span>
+                    <div className={`w-[200px] h-screen ${content} right-1 py-10 side_nav`}>
+                        <div className="flex-col flex gap-2">
+                            <Nav />
                         </div>
+
+                    </div>
 
                 </div>
                 <nav className="hidden  md:block px-5">
