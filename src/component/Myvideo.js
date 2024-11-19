@@ -5,7 +5,7 @@ function Myvideo() {
 
     return (
         <div className='video_main brightness-[40%] z-0'>
-            <video control autoPlay muted={false} className='react_player'>
+            <video control autoPlay muted={true} className='react_player'>
             <source src={videoBg} type="video/mp4" />
             </video>
             

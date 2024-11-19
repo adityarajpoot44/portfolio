@@ -41,7 +41,7 @@ function Home() {
                 /></p>
             </div>
 
-            <div className="absolute z-20 bottom-3 right-2 m-3 flex flex-col gap-5 ">
+            <div className="absolute z-20 bottom-3 right-0 m-3 flex flex-col gap-5 ">
                 <FontAwesomeIcon onClick={mutebtn} icon={icon} className="mx-2 text-xl hover_social hover:text-[#009e66] relative " />
                 <a href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="mx-2 text-xl hover_social  hover:text-[#009e66] relative " /></a>
                 <a href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
