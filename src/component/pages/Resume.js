@@ -22,7 +22,7 @@ function Resume() {
                     <div className="w-full">
                         <h2 className="text-3xl pb-4">Expeience</h2>
                         <div className="pb-10">
-                            <ResumeSec heading="Frontend Developer" year={"Sep'24 - Present"} college={"Maisha Infotech Pvt Ltd"} para={"Crafted responsive websites using HTML5, CSS3, JavaScript, and React frameworks"} />
+                            <ResumeSec heading="Frontend Developer" year={"Sep'24 - Oct'24"} college={"Maisha Infotech Pvt Ltd"} para={"Crafted responsive websites using HTML5, CSS3, JavaScript, and React frameworks"} />
                         </div>
                     </div>
                 </div>
