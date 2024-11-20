@@ -1,6 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from '@gsap/react';
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/LOGO.png"
 import '../App.css'
@@ -25,14 +23,6 @@ function Nav() {
 function Header() {
     const [ham, setHam] = useState(faBars);
     const [content, setContent] = useState('hidden');
-    const barbtn = useRef()
-
-    useGSAP(()=>{
-        gsap.to(barbtn,{
-            x:20
-        })
-    })
-
     useEffect(() => {
         if (ham === faXmark) {
             setContent('block');
@@ -52,8 +42,8 @@ function Header() {
                 <div className="">
                     <NavLink to="/" ><img alt="" src={logo} width="100px" className="absolute top-0 left-[-20px]" /></NavLink>
                 </div>
-                <div className="block md:hidden text-xl border">
-                    <span ref={barbtn} className="border text-[#009e66] absolute right-10 border-[#009e66] py-2 px-3 rounded-full bg-gray-50/20 "><FontAwesomeIcon icon={ham} onClick={toggleSidebar} /></span>
+                <div className="block md:hidden text-xl">
+                    <span className="border text-[#009e66] absolute right-10 border-[#009e66] py-2 px-3 rounded-full bg-gray-50/20 "><FontAwesomeIcon icon={ham} onClick={toggleSidebar} /></span>
                     <div className={`w-[200px] h-screen ${content} right-1 py-10 side_nav`}>
                         <div className="flex-col flex gap-2">
                             <Nav />

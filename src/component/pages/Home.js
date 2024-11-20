@@ -2,18 +2,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faGithub, faLinkedinIn, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Typewriter } from 'react-simple-typewriter'
 import { faVolumeHigh,faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { DataContext } from '../../App';
 
 
 function Home() {
 
-    const [icon,seticon]=useState(faVolumeHigh)
-    
+    const [icon,seticon]=useState(faVolumeXmark)
+    const { setSharedData } = useContext(DataContext);
+
     function mutebtn(){
         if(icon===faVolumeHigh){
             seticon(faVolumeXmark);
+            setSharedData(true)
         }else{
             seticon(faVolumeHigh);
+            setSharedData(false)
         }
     }
 

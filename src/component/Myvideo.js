@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import videoBg from '../assest/video/myVideo.mp4';
-import {useState} from 'react'
+import { DataContext } from '../App';
+
 
 function Myvideo() {
-    const [vol,setvol]=useState(true)
+    const {sharedData} =useContext(DataContext);
     return (
         <div className='video_main brightness-[40%] z-0'>
-            <video autoPlay muted={vol} className='react_player'>
+            <video autoPlay muted={sharedData} className='react_player'>
             <source src={videoBg} type="video/mp4" />
             </video>
             
