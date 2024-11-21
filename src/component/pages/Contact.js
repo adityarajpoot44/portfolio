@@ -1,35 +1,28 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserSecret, faMapLocationDot, faMobileScreen, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function Contact() {
+
     const [email, setemail] = useState()
 
     const Handleform = async (e) => {
-        // e.preventDefault();
+        e.preventDefault();
             const name=document.querySelector('#name').value
             const subject= document.querySelector('#subject').value
             const message= document.querySelector('#message').value
-
-
-       const res = fetch('/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email,name,subject,message
+        
+            axios.post('/contact',{
+                name,
+                subject,
+                message
+            }).then((response)=>{
+                console.log('Message sent successfully:', response.data);
+            }).catch((error)=>{
+                console.error('Error sending message:', error);
             })
-        })
-        if(res.ok){
-            console.log("sent")
-        }else{
-            console.log('error')
-        }
     }
-
-
-
 
     return (
         <div className="absolute z-30 w-screen h-screen">
