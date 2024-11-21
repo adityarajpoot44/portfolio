@@ -2,13 +2,15 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const nodemailer = require('nodemailer')
+const axios = require('axios');
+
 require('dotenv').config();
 app.use(express.json());
 app.use(cors());
 
 const port = 3003;
 
-app.post('/contact', (req, res) => {
+app.get('/contact', (req, res) => {
     const { email, subject, message ,name } = req.body;
     console.log(email);
     try {
