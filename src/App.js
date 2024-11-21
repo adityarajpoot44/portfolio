@@ -15,17 +15,17 @@ function App() {
   useEffect(()=>{
     setTimeout(()=>{
       setloading(false)
-    },5000)
+    },4000)
   })
 
   return (
     <>
-    {loading ? <Loading/>:<DataContext.Provider value={{sharedData,setSharedData}}>
+    {loading ? <Loading/>:null}
+    <DataContext.Provider value={{sharedData,setSharedData}}>
       <Header />
       <Outlet/>
       <Myvideo />
       </DataContext.Provider>
-      }
     </>
   );
 }

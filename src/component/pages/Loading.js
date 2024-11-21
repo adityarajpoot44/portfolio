@@ -1,12 +1,15 @@
 
 
-const Loading=()=>{
-    return(
+const Loading = () => {
+    return (
         <>
-            <div className="bg-black h-screen flex justify-center items-center">
-                <div className="loader h-10 ">
+            <div className="flex ">
+                <div className="bg-black z-50 h-screen w-full flex justify-center items-center">
+                    <div className="loader h-10 ">
 
+                    </div>
                 </div>
+
 
             </div>
         </>
