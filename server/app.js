@@ -2,17 +2,19 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const nodemailer = require('nodemailer')
-const axios = require('axios');
-
-require('dotenv').config();
+const dotenv = require('dotenv')
+dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-const port = 3003;
+const port = 3003; 
 
-app.get('/contact', (req, res) => {
+// app.post('/contact', (req, res) => {
+//     console.log(req.bosy);
+//     res.send('Message received');
+// });
+app.post('/contact', (req, res) => {
     const { email, subject, message ,name } = req.body;
-    console.log(email);
     try {
         const transporter = nodemailer.createTransport({
             service: "gmail",
@@ -20,15 +22,58 @@ app.get('/contact', (req, res) => {
             secure: true,
             auth: {
                 user: process.env.EMAIL,
-                pass: process.env.PASSWORD,
+                pass: process.env.PASS,
             },
         });
         const mail = ({
-            from: email , 
             to: process.env.EMAIL,
             subject: subject,
-            html: `<h1>${name},</h1><br>${email}<br><p>${message}</p>`,
+            html: `
+                <html >
+                    <head>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                color: #333;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .container {
+                                max-width: 600px;
+                                margin: 50px auto;
+                                padding: 20px;
+                                background-color: #fff;
+                                border-radius: 8px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            }
+                            h1 {
+                                color: #4CAF50;
+                                font-size: 24px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 1.5;
+                            }
+                            .footer {
+                                text-align: center;
+                                margin-top: 20px;
+                                font-size: 14px;
+                                color: #777;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="container">
+                            <h1>${name},</h1>
+                            <p><strong>Email:</strong> ${email}</p>
+                            <p><strong>Subject:</strong> ${subject}</p>
+                            <p><strong>Message:</strong><br>${message}</p>
+                        </div>
+                    </body>
+                </html>
+            `,
         });
+        
 
         transporter.sendMail(mail, (error, info) => {
             if (error) {
@@ -46,5 +91,5 @@ app.get('/contact', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+    console.log(`Server listening on port ${process.env.EMAIL},`);
 });  
