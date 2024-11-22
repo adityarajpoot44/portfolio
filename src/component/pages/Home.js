@@ -1,31 +1,61 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faGithub, faLinkedinIn, faXTwitter} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Typewriter } from 'react-simple-typewriter'
-import { faVolumeHigh,faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
-import { useContext, useState } from 'react';
+import { faVolumeHigh, faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
+import { useContext, useRef, useState } from 'react';
 import { DataContext } from '../../App';
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react';
 
 
 function Home() {
 
-    const [icon,seticon]=useState(faVolumeXmark)
+    const [icon, seticon] = useState(faVolumeXmark)
     const { setSharedData } = useContext(DataContext);
 
-    function mutebtn(){
-        if(icon===faVolumeHigh){
+    function mutebtn() {
+        if (icon === faVolumeHigh) {
             seticon(faVolumeXmark);
             setSharedData(true)
-        }else{
+        } else {
             seticon(faVolumeHigh);
             setSharedData(false)
         }
     }
+    const motName = useRef()
+    const motLeft =useRef()
+    const motRight =useRef()
 
+    useGSAP(() => {
+        gsap.from(motName.current, {
+            y: -30,
+            opacity: 0,
+            delay:1.2,
+            duration: 1,
+        })
+        gsap.from(motLeft.current, {
+            x: -500,
+            opacity: 0,
+            delay:1.2,
+            duration: 1.5,
+        })
+        gsap.from(motRight.current, {
+            x: 500,
+            delay:1.2,
+            opacity: 0,
+            duration: 1.5,
+        })
+        gsap.from(".nnn",{
+            x:30,
+            opacity:0,
+            stagger:.2,
+        })
+    })
     return (
         <>
             <div className="home_center absolute z-20 ">
-                <h1 className=" text-[70px] font-bold mb-[34px] md:w-[560px] tracking-[5px]">Aditya Rajpoot</h1>
-                <p className="text-center text-[25px] md:text-[30px] tracking-wide"> I'm a <span className=' text-[#099e66]'> <Typewriter
+                <h1 ref={motName} className=" text-[70px] font-bold mb-[34px] md:w-[560px] tracking-[5px]">Aditya Rajpoot</h1>
+                <p ref={motLeft} className="text-center text-[25px] md:text-[30px] tracking-wide"> I'm a <span className=' text-[#099e66]'> <Typewriter
                     words={['Developer', 'Freelancer', 'Designer', 'Engineer']}
                     loop={false}
                     cursor
@@ -34,7 +64,7 @@ function Home() {
                     deleteSpeed={100}
                     delaySpeed={1000}
                 /></span></p>
-                <p className="text-center pt-10 text-[25px] md:text-[30px]  text-[#099e66] tracking-wide"> <Typewriter
+                <p ref={motRight} className="text-center pt-10 text-[25px] md:text-[30px]  text-[#099e66] tracking-wide"> <Typewriter
                     words={['Eat', 'Sleep', 'Code', 'Repeat!']}
                     loop={false}
                     cursor
@@ -46,11 +76,11 @@ function Home() {
             </div>
 
             <div className="absolute z-20 bottom-3 right-0 m-3 flex flex-col gap-5 ">
-                <FontAwesomeIcon onClick={mutebtn} icon={icon} className="mx-2 text-xl hover_social hover:text-[#009e66] relative " />
-                <a href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="mx-2 text-xl hover_social  hover:text-[#009e66] relative " /></a>
-                <a href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                <a href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
-                <a href="https://twitter.com/adityar_44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faXTwitter} className="mx-2 text-xl hover_social hover:text-[#009e66]" /></a>
+                <a  href="javascript:;" rel="noreferrer"><FontAwesomeIcon onClick={mutebtn} icon={icon} className="nnn mx-2 text-xl hover_social hover:text-[#009e66] relative " /></a>
+                <a  href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66] relative " /></a>
+                <a  href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
+                <a  href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
+                <a  href="https://twitter.com/adityar_44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faXTwitter} className="nnn mx-2 text-xl hover_social hover:text-[#009e66]" /></a>
             </div>
         </>
     );

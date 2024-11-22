@@ -10,7 +10,7 @@ const DataContext = createContext();
 
 function App() {
   const [sharedData, setSharedData] = useState(true);
-  const [loading,setloading]=useState(true);
+  const [loading,setloading]=useState(false);
 
   useEffect(()=>{
     setTimeout(()=>{
