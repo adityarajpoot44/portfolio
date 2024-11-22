@@ -76,7 +76,7 @@ function Home() {
             </div>
 
             <div className="absolute z-20 bottom-3 right-0 m-3 flex flex-col gap-5 ">
-                <a  href="javascript:;" rel="noreferrer"><FontAwesomeIcon onClick={mutebtn} icon={icon} className="nnn mx-2 text-xl hover_social hover:text-[#009e66] relative " /></a>
+                ><FontAwesomeIcon onClick={mutebtn} icon={icon} className="nnn mx-2 text-xl hover_social hover:text-[#009e66] relative " />
                 <a  href="https://github.com/adityarajpoot44" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66] relative " /></a>
                 <a  href="https://www.linkedin.com/in/aditya-rajpoot44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
                 <a  href="https://www.instagram.com/aditya_rajpoot_44/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="nnn mx-2 text-xl hover_social  hover:text-[#009e66]" /></a>
