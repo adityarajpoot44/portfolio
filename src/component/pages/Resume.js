@@ -19,9 +19,12 @@ function Resume() {
                             <ResumeSec heading=" Matriculation" year={"2017 - 2018"} college={"Krishna International School"} para={"-"} />
                         </div>
                     </div>
+
                     <div className="w-full">
                         <h2 className="text-3xl pb-4">Expeience</h2>
                         <div className="pb-10">
+                            <ResumeSec heading="Frontend Developer" year={"Apr'25 - Present"} college={"Tata 1mg"} para={"Designed, developed, and maintained responsive and interactive web applications using HTML, CSS, JavaScript, and React.js."} />
+                            <ResumeSec heading="Web Developer" year={"Feb'25 - Apr'25"} college={"Tecraki Technology Solutions Pvt."} />
                             <ResumeSec heading="Frontend Developer" year={"Sep'24 - Oct'24"} college={"Maisha Infotech Pvt Ltd"} para={"Crafted responsive websites using HTML5, CSS3, JavaScript, and React frameworks"} />
                         </div>
                     </div>
@@ -33,8 +36,8 @@ function Resume() {
                         <div className="space-y-3">
                             <ProgressBar name="HTML/CSS" range="ms-[calc(90%-1.25rem)]" number="90%" />
                             <ProgressBar name="Web Design" range="ms-[calc(90%-1.25rem)]" number="90%" />
-                            <ProgressBar name="MongoDB" range="ms-[calc(50%-1.25rem)]" number="50%"/>
-                            <ProgressBar name="Node.js" range="ms-[calc(70%-1.25rem)]" number="70%" />
+                            <ProgressBar name="MongoDB" range="ms-[calc(85%-1.25rem)]" number="85%"/>
+                            <ProgressBar name="Node.js" range="ms-[calc(90%-1.25rem)]" number="90%" />
                             <ProgressBar name="Git/Github" range="ms-[calc(75%-1.25rem)]" number="75%" />
                             
                         </div>
@@ -42,8 +45,8 @@ function Resume() {
                     <div className="w-full">
                         <div className="space-y-3">
                             <ProgressBar name="React" range="ms-[calc(80%-1.25rem)]" number="80%" />
-                            <ProgressBar name="JavaScript" range="ms-[calc(85%-1.25rem)]" number="85%" />
-                            <ProgressBar name="Express.js" range="ms-[calc(50%-1.25rem)]" number="50%" />
+                            <ProgressBar name="JavaScript" range="ms-[calc(95%-1.25rem)]" number="95%" />
+                            <ProgressBar name="Express.js" range="ms-[calc(85%-1.25rem)]" number="85%" />
                             <ProgressBar name="C++" range="ms-[calc(80%-1.25rem)]" number="80%" />
                             <ProgressBar name="Tailwind Css" range="ms-[calc(90%-1.25rem)]" number="90%" />
 
